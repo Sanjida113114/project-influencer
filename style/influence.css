@@ -40,9 +40,11 @@ body{
     max-width: 1240px;
     margin: 0 auto;
 }
+
 .text-white{
   color: white;
 }
+
 a{
   text-decoration: none;
   color:white
@@ -53,11 +55,21 @@ ul{
 img{
   width: 100%;
 }
+section{
+  padding:100px 0;
+}
 /* nav style */
 nav>h2 {
   font-size: 24px;
   font-weight: bold;
 }
+.color{
+   background: -webkit-linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
 .navbar{
   margin-top: 60px;
   display: flex;
@@ -102,4 +114,105 @@ nav>h2 {
  background-image:url(./../images/Circle\ design.svg) ; 
  background-repeat: no-repeat;
  background-position: center;
+}
+/* sponsor section style */
+.sponsor{
+  background-color: white;
+  margin:30px 80px;
+  padding:20px 0;
+  border-radius: 5px;
+}
+
+.img-container{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+/* product section */
+.section-tittle{
+  text-align: center;
+  font-size:28px ;
+  font-weight: bolder;
+
+}
+.rating{
+  display: flex;
+  gap: 30px;
+}
+svg.svg-inline--fa.fa-star {
+    color: orange;
+}
+.product-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 50px;
+  
+}
+.product-card{
+  border:2px solid #a3a666a9;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 0 5px 0 #2e4932;
+  cursor: pointer;
+}
+.product-card img{ transition: all ease-in-out 0.3s;}
+
+.product-card img:hover{
+  transform:scale(1.1);
+}
+
+.scroll{
+  margin-top: 20px;
+  text-align: end;
+  cursor: pointer;
+
+}
+/* feature section */
+
+.feature-section{
+  background-image: url(./../images/gaget\ bg.jpg);
+   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(-25px);
+}
+.feature{
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.feature-img{
+  width: 40%;
+}
+.feature-content{
+  width: 60%;
+}
+.feature-content  p{
+  margin: 30px 0; 
+}
+.feature-content h2{
+  font-size: 38px;
+  font-weight: bold;}
+/* }footer  */
+.footer-section{
+  background-color:hsl(198, 35%, 28%) ;
+width: 100%;
+height: 100%;
+margin-top: 60px;
+padding: 50px ;}
+.footer-content{
+  text-align: center;
+}
+.footer-content p{
+  font-size: 10px;
+  padding: 10px;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,0 +1,40 @@
+/* banner part responsive */
+@media screen and (max-width:576px){
+    .navbar{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+
+    }
+
+    .banner-content,.banner-img{
+  width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0 40px;
+}
+/* product section */
+.product-container{
+    grid-template-columns:1fr;
+    margin: 15px;
+}
+.product-card{
+
+    cursor: pointer;
+
+}
+.feature{
+    flex-direction: column-reverse;
+}
+.feature-content{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+.feature-img{
+    width: 100%;
+    padding:15px;
+}
+}
+
